@@ -1,4 +1,3 @@
-// server/routes/assistanceRequests.js
 const express = require('express');
 const router = express.Router();
 const AssistanceRequest = require('../models/AssistanceRequest');
