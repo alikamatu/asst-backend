@@ -9,7 +9,8 @@ const app = express();
 
 
 app.use(cors({
-    origin: '*',
+    origin: '*', // Allow all origins for development; restrict in production
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
 }));
 
 app.use(express.json());
